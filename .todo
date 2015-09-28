@@ -1,5 +1,7 @@
 Clean tests :
-☐
+☐ remove .to_json
+☐ remove json headers
+☐ get airborne matchers
 
 Test api :
   ☐ register
