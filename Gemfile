@@ -28,6 +28,7 @@ group :development, :test do
   gem 'rspec-core'
   gem 'rspec-rails'
   gem 'database_cleaner'
+  gem 'airborne'
 end
 
 group :production do

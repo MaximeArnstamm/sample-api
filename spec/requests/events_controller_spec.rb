@@ -12,24 +12,19 @@ RSpec.describe Api::V1::EventsController, type: :request do
     }
 
     it 'should 401 if bad credentials' do
-      # Given the user and his bar
+      # Given the user
 
       # When
-      post "/api/v1/users/#{@user.id}/events",
+      post_json "/api/v1/users/#{@user.id}/events",
       {
         name: 'test',
         date: Date.today
-      }.to_json,
-      {
-        'Accept' => 'application/json',
-        'Content-Type' => 'application/json',
-        'x-user-email' => 'toto',
-        'x-user-token' => 'toto',
-      }
+      },
+      'toto',
+      'toto'
 
       # Then
-      expect(response.response_code).to eq 401
-      #expect_status 401
+      expect_status 401
     end
   end
 
