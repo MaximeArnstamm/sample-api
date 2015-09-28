@@ -24,10 +24,11 @@ module Api
 
         @event = Event.new(event_params)
         user.events << @event
-        
+
         if user.save
           render 'show', formats: [:json], handlers: [:jbuilder], status: 201
         else
+          # TODO: meaningful message
           render json: { message: 'Bad request' }, status: 500
         end
       end

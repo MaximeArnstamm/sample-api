@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  apipie
-
   devise_for :users, :path_prefix => 'api/v1', :skip => [:sessions, :registrations, :passwords]
 
   namespace :api do
@@ -19,5 +17,5 @@ Rails.application.routes.draw do
       end
     end
   end
-  
+
 end

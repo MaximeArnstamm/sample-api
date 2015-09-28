@@ -12,7 +12,7 @@ gem 'devise'
 gem 'pundit'
 gem 'simple_token_authentication', '~> 1.0'
 
-gem 'apipie-rails'
+# gem 'apipie-rails', :github => 'Apipie/apipie-rails'
 
 group :development, :test do
   gem 'spring'

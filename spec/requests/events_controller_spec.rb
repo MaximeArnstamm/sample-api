@@ -26,6 +26,44 @@ RSpec.describe Api::V1::EventsController, type: :request do
       # Then
       expect_status 401
     end
+
+    it 'should 403 if not authorized' do
+      # Given the user
+
+      # When
+      post_json "/api/v1/users/#{@user.id}/events",
+      {
+        name: 'test',
+        date: Date.today
+      },
+      @wrong_user.email,
+      @wrong_user.authentication_token
+
+      # Then
+      expect_status 403
+      expect_json({ message: 'Not authorized'})
+    end
+
+    it 'should create an event' do
+      # Given
+
+      # When
+      post_json "/api/v1/users/#{@user.id}/events",
+      {
+        name: 'test',
+        date: Date.today
+      },
+      @user.email,
+      @user.authentication_token
+
+      # Then
+      expect_status 201
+      expect(Event.count).to eq 1
+      event = Event.last
+      expect(event.name).to eq 'test'
+      expect(event.date).to eq Date.today
+      expect(event.user).to eq @user
+    end
   end
 
 end

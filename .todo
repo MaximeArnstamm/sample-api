@@ -1,18 +1,19 @@
 Clean tests :
-☐ remove .to_json
-☐ remove json headers
-☐ get airborne matchers
+✔ remove .to_json @done(2015-09-28 23:10)
+✔ remove json headers @done(2015-09-28 23:10)
+✔ get airborne matchers @done(2015-09-28 23:10)
 
 Test api :
   ☐ register
   ☐ session
   ☐ users
   ☐ events
+    ☐ pundit for index ?
 
 Unit test :
-  ☐ events sql
+  ☐ events sql -> all events after today
 
 ☐ apipie documentation
-☐ Travis CI
+✔ Travis CI @done(2015-09-28 23:10)
 ☐ Readme
 ☐ Blog post
