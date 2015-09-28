@@ -12,6 +12,7 @@ Test api :
 Unit test :
   ☐ events sql
 
+☐ apipie documentation
 ☐ Travis CI
 ☐ Readme
 ☐ Blog post
