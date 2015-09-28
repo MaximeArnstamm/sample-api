@@ -1,0 +1,15 @@
+Clean tests :
+☐
+
+Test api :
+  ☐ register
+  ☐ session
+  ☐ users
+  ☐ events
+
+Unit test :
+  ☐ events sql
+
+☐ Travis CI
+☐ Readme
+☐ Blog post
