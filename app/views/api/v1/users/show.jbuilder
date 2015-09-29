@@ -1,1 +1,1 @@
-json.partial! 'api/v1/shared/user', event: @user
+json.partial! 'api/v1/shared/user', user: @user
