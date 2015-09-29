@@ -2,19 +2,16 @@ module Api
   module V1
 
     class UsersController < ApiController
+      before_action :fetch_and_authorize_user
 
       def show
-        @user = User.find(params[:id])
-        authorize @user
       end
 
       def update
-        @user = User.find(params[:id])
-        authorize @user
-
         if @user.update(user_params)
           render 'show', formats: [:json], handlers: [:jbuilder], status: 201
         else
+          # TODO : more meaningful message
           render json: { message: 'Bad request' }, status: 500
         end
       end
@@ -25,6 +22,11 @@ module Api
         params.permit(:first_name,
                       :last_name,
                       :password)
+      end
+
+      def fetch_and_authorize_user
+        @user = User.find(params[:id])
+        authorize @user
       end
 
     end # class

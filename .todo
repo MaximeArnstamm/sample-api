@@ -9,9 +9,6 @@ Test api :
   ✔ users @done(2015-09-29 11:20) @project(Test api )
   ✔ events @done(2015-09-29 14:17) @project(Test api )
 
-Unit test :
-  ☐ events sql -> all events after today
-
 ☐ apipie documentation
 ✔ Travis CI @done(2015-09-28 23:10)
 ☐ Readme
