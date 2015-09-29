@@ -4,8 +4,8 @@ Clean tests :
 ✔ get airborne matchers @done(2015-09-28 23:10)
 
 Test api :
-  ☐ register
-  ☐ session
+  ✔ register @done(2015-09-29 10:56) @project(Test api )
+  ✔ session @done(2015-09-29 11:01) @project(Test api )
   ☐ users
   ☐ events
     ☐ pundit for index ?
