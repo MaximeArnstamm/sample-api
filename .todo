@@ -7,8 +7,7 @@ Test api :
   ✔ register @done(2015-09-29 10:56) @project(Test api )
   ✔ session @done(2015-09-29 11:01) @project(Test api )
   ✔ users @done(2015-09-29 11:20) @project(Test api )
-  ☐ events
-    ☐ pundit for index ?
+  ✔ events @done(2015-09-29 14:17) @project(Test api )
 
 Unit test :
   ☐ events sql -> all events after today

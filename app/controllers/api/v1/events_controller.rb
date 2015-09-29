@@ -6,9 +6,11 @@ module Api
 
       def index
         user = User.find(params[:user_id])
-        authorize user
-
-        @events = user.events
+        if (user.id != current_user.id)
+          render json: { message: 'Not authorized' }, status: 403
+        else
+          @events = user.events
+        end
       end
 
       def show
@@ -36,7 +38,7 @@ module Api
       private
 
       def event_params
-        params.require(:event).permit(:name, :date)
+        params.require(:event).permit(:name, :city)
       end
     end
 

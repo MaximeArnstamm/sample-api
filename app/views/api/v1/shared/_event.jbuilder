@@ -1,4 +1,4 @@
 json.event do
   json.name event.name
-  json.date event.date
+  json.city event.city
 end
