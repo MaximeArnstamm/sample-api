@@ -7,7 +7,7 @@ gem 'rails', '4.2.1'
 gem 'jbuilder', '~> 2.0'
 
 # core
-gem 'kaminari'
+# gem 'kaminari'
 gem 'devise'
 gem 'pundit'
 gem 'simple_token_authentication', '~> 1.0'
