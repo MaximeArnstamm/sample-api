@@ -21,8 +21,6 @@ group :development, :test do
   gem 'better_errors'
   gem 'quiet_assets'
   gem 'byebug'
-  gem 'pry-byebug'
-  gem 'pry-rails'
   gem 'sqlite3'
 
   gem 'rspec-core'
