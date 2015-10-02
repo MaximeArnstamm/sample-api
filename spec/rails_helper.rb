@@ -5,6 +5,8 @@ abort("The Rails environment is running in production mode!") if Rails.env.produ
 require 'rspec/rails'
 require 'database_cleaner'
 require 'support/request_helpers'
+require "codeclimate-test-reporter"
+CodeClimate::TestReporter.start
 
 ActiveRecord::Migration.maintain_test_schema!
 

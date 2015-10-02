@@ -22,11 +22,15 @@ group :development, :test do
   gem 'quiet_assets'
   gem 'byebug'
   gem 'sqlite3'
+end
 
+group :test do
   gem 'rspec-core'
   gem 'rspec-rails'
   gem 'database_cleaner'
   gem 'airborne'
+
+  gem "codeclimate-test-reporter", group: :test, require: nil
 end
 
 group :production do
