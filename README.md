@@ -1,4 +1,6 @@
 [![Build Status](https://travis-ci.org/MaximeArnstamm/sample-api.svg?branch=master)](https://travis-ci.org/MaximeArnstamm/sample-api)
+[![Code Climate](https://codeclimate.com/github/MaximeArnstamm/sample-api/badges/gpa.svg)](https://codeclimate.com/github/MaximeArnstamm/sample-api)
+[![Test Coverage](https://codeclimate.com/github/MaximeArnstamm/sample-api/badges/coverage.svg)](https://codeclimate.com/github/MaximeArnstamm/sample-api/coverage)
 
 ! work in progress !
 
